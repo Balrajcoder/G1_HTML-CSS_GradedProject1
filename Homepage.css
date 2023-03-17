@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+header h1{
+    margin: 0%;
+    text-align: center;
+    color: white;
+    background-color: rgb(91, 83, 83);
+    padding: 20px;
+}
+
+#navigate>ul{
+    margin: 0%;
+
+}
+#navigate>ul li{
+    list-style-type: none;
+    display: inline-block;
+    
+   
+}
+#navigate>ul li a{
+    
+    text-decoration: none;
+   
+}
