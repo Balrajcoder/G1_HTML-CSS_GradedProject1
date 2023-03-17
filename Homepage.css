@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0;
     background-color: antiquewhite;
 }
 
-header h1{
+header h1 {
     margin: 0%;
     text-align: center;
     color: white;
@@ -11,18 +11,150 @@ header h1{
     padding: 20px;
 }
 
-#navigate>ul{
-    margin: 0%;
+#navigate {
+    position: sticky;
 
 }
-#navigate>ul li{
+
+#navigate>ul {
+    margin: 0%;
+    background-color: rgb(140, 136, 136);
+}
+
+#navigate>ul>li {
     list-style-type: none;
     display: inline-block;
-    
-   
+    padding: 10px;
+
+
 }
-#navigate>ul li a{
-    
+
+#navigate>ul>li>a {
+    padding: 20px;
     text-decoration: none;
-   
+    color: white;
+
+}
+
+.menu>li:hover {
+    background-color: black;
+}
+
+.dropdown li a {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.dropdown {
+
+    position: absolute;
+    top: 40px;
+    width: auto;
+    background-color: white;
+    padding: 0%;
+    display: none;
+}
+
+.menu li:nth-child(2):hover .dropdown,
+.menu li:nth-child(3):hover .dropdown {
+
+    display: block;
+
+
+}
+
+.menu li:nth-child(2):hover,
+.menu li:nth-child(3):hover {
+    font-size: large;
+}
+
+.dropdown li {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown li:hover {
+    background-color: gainsboro;
+
+}
+
+#fade img {
+    position: absolute;
+    left: 0;
+
+}
+
+img:nth-of-type(1) {
+    border: 2px solid steelblue;
+    width: 100%;
+    height: 60%;
+    animation-name: imgtransit;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+}
+
+img:nth-of-type(2) {
+    border: 2px solid steelblue;
+    width: 100%;
+    height: 60%;
+    animation-name: imgtransit;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+img:nth-of-type(3) {
+    border: 2px solid steelblue;
+    width: 100%;
+    height: 60%;
+    animation-name: imgtransit;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+}
+
+img:nth-of-type(4) {
+    border: 2px solid steelblue;
+    width: 100%;
+    height: 60%;
+    animation-name: imgtransit;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 6s;
+}
+
+img:nth-of-type(5) {
+    border: 2px solid steelblue;
+    width: 100%;
+    height: 60%;
+    animation-name: imgtransit;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+}
+
+
+@keyframes imgtransit {
+    0% {
+        opacity: 1;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
